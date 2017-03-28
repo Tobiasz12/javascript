@@ -1,9 +1,9 @@
  getTriangleArea = function getTriangleArea(a, h) {
 
-	if ( (a <= 0) && (h <= 0) ) {
+	if ( (a <= 0) || (h <= 0) ) {
 	console.log('Nieprawidłowe dane')
 }
-	return a*h/2 ;
+	return a * h / 2;
 }
 
 // zmienne pola trójkąta
