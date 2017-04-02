@@ -13,7 +13,7 @@ function rysujChoinke(n) {
         
 }
 
-
+//próba ze spacjami ,
 var n =  rysujChoinke(5)       
 function rysujChoinke(n) {
     for( k = 1; k <= n; k++)
