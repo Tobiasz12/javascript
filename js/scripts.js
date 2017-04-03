@@ -1,5 +1,5 @@
+rysujChoinke(5)
 
-var n =  rysujChoinke(5)       
 function rysujChoinke(n) {
     for( k = 1; k <= n; k++)
     {  var star = (' ')
