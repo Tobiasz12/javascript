@@ -1,9 +1,19 @@
 
-var withButtonClass = document.getElementsByClassName("button");
-	for (var i = 0; i < withButtonClass.length; i++) {
+
+var withButtonItemsClass = document.getElementsByClassName("button");
+	for (var i = 0; i < withButtonItemsClass.length; i++) {		
+		var button = withButtonItemsClass[i].innerText;
+  		alert(button);
 }
-alert(withButtonClass)
-}
-console.log(withButtonClass);
+
+
+
+
+
+
+
+
+
+
 
 
