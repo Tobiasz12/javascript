@@ -4,9 +4,10 @@ var add = document.getElementById('addElem')
 add.addEventListener('click', function() {
 	list.innerHTML += '<li>item</li>'
 
-document.getElementsByTagName("li").length;
-    
+     var x = document.getElementsByTagName("li");
+    list.innerHTML += x.length;
   
 });
 
+console.log(list)
 
