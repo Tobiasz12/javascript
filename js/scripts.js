@@ -4,8 +4,8 @@ var add = document.getElementById('addElem')
 add.addEventListener('click', function() {
 	list.innerHTML += '<li>item</li>'
 
-     var x = document.getElementsByTagName("li");
-    list.innerHTML += x.length;
+     var itemsByTagName = document.getElementsByTagName("li");
+    list.innerHTML += itemsByTagName.length - 5; 
   
 });
 
