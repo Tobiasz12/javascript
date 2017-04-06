@@ -23,7 +23,7 @@ var gameState = 'notStarted',  //started // ended
     computer = {
         score: 0
     };
-//wyswietlanie elementow
+//wyswietlanie elementow 
 
 var newGameElem = document.getElementById('js-newGameElement'),
     pickElem = document.getElementById('js-playerPickElement'),
@@ -65,7 +65,10 @@ function newGame() {
   }
 
 }
-
+function setGamePoints() {
+    playerPointsElem.innerHTML = player.score;
+    computerPointsElem.innerHTML = computer.score;
+}
 // wybor gracza 
 
 function playerPick(playerPick) {
@@ -114,7 +117,7 @@ function checkRoundWinner(playerPick, computerPick) {
         computerResultElem.innerHTML = "Wygrana!";
         computer.score++;
     }
-
+    setGamePoints()
 }
 
 function playerPick(playerPick) {
@@ -131,4 +134,5 @@ function playerPick(playerPick) {
 function setGamePoints() {
     playerPointsElem.innerHTML = player.score;
     computerPointsElem.innerHTML = computer.score;
+
 }
