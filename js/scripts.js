@@ -101,7 +101,10 @@ function checkRoundWinner(playerPick, computerPick) {
   var winnerIs = 'player';
 
     if (playerPick == computerPick) {
-        winnerIs = 'noone'; // remis
+        winnerIs = ' '; 
+        playerResultElem.innerHTML = "Remis!";
+        computerResultElem.innerHTML = "Remis!";
+
     } else if (
         (computerPick == 'rock' &&  playerPick == 'scissors') ||
         (computerPick == 'scissors' &&  playerPick == 'paper') ||
